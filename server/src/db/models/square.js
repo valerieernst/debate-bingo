@@ -1,17 +1,17 @@
-module.exports = (sequelize, DataTypes) => {
-    return sequelize.define('users', {
+module.exports = (sequelize, DataTypes) => (
+    sequelize.define('sqaures', {
         id: {
 			type: DataTypes.INTEGER(10).UNSIGNED,
 			allowNull: false,
 			primaryKey: true,
 			autoIncrement: true
 		},
-		name: {
+		content: {
 			type: DataTypes.STRING(256),
 			allowNull: false
 		},
 	}, {
-		tableName: 'users',
+		tableName: 'squares',
 		timestamps: false
-	});
-};
+	})
+);
