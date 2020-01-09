@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => (
-    sequelize.define('sqaures', {
+    sequelize.define('squares', {
         id: {
 			type: DataTypes.INTEGER(10).UNSIGNED,
 			allowNull: false,
